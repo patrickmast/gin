@@ -17,7 +17,7 @@ func main() {
 		})
 	})
 
-	r.POST("/Test", func(c *gin.Context) {
+	r.GET("/test", func(c *gin.Context) {
 		currentTime := time.Now().Format("2006-01-02 15:04:05")
 		c.JSON(200, gin.H{
 			"current_time": currentTime,
